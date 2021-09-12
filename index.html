@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Animal sound recognizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2></h2>
+      <p>Note: The Webpage can only recognize the sounds of the following animals - Cat, Dog, Lion...</p>
+    </div>
+    <div class="main_div">
+      <center>
+        <br>
+        <button class="btn btn-warning" onclick="startClassification();">Start</button>
+        <h3 id="result_label">I can Hear - </h3>
+        <h4 id="result_confidence">Acuracy - </h4>
+        <br>
+        <img src="cat.PNG" id="cat" width="300" height="300">
+        <img src="dog.PNG" id="dog" width="300" height="300">
+        <img src="lion.PNG" id="lion" width="300" height="300">
+        <img src="back.PNG" id="back" width="300" height="300">
+      </center>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="copy_right_footer">
+        Developed by - Vihaan Gadang
+        <br>
+        <i class="fa fa-copyright" aria-hidden="true"><b>2021 all rights reserved</b></i>
+      </div>
+<script src="main.js"></script>
+  </body>
+</html>
